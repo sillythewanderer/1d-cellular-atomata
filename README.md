@@ -1,2 +1,5 @@
 # 1d-cellular-atomata
-a 1D cellularatomata
+
+Installation instructions (any linux machine with C standard library):
+
+`git clone https://github.com/sillythewanderer/1d-cellular-atomata; cd 1d-cellular-automata; make; ./main`
