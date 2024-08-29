@@ -1,5 +1,6 @@
 #include <stdint.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 // curent rule:
 // 111 -> 0
@@ -89,11 +90,17 @@ void generate_and_display_generations(int number_of_generations) {
 }
 
 int main() {
-  printf("01234\n");
+  printf("enter a number lower than 256: ");
+  int user_input;
+  scanf("%d", &user_input);
+  if (user_input > 255) {
+    printf("\n255 is the max, either you entered a greater number or an invalid input. also the program crashed, so..... well done?");
+    return -1;
+  }
+
   newline();
   display_generation();
-  
-  generate_and_display_generations(88);
+  generate_and_display_generations(user_input);
 
   return 0;
 }
