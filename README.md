@@ -1,4 +1,4 @@
-# 1d-cellular-atomata
+# 1d-cellular-automata
 
 Installation instructions (any linux machine with C standard library):
 
